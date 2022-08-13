@@ -177,7 +177,11 @@ class StoryMenuState extends MusicBeatState
 		rightArrow.animation.addByPrefix('press', "arrow push right", 24, false);
 		rightArrow.animation.play('idle');
 		difficultySelectors.add(rightArrow);
+#if android
 
+		addVirtualPad(FULL, A_B);
+
+		#end
 		trace("Line 150");
 
 		add(yellowBG);
